@@ -5,7 +5,8 @@
     "main": "src/server.js",
     "scripts": {
         "setup": "npm install && npm update && node src/server.js",
-        "start": "node src/server.js"
+        "start": "node src/server.js",
+        "build":"npm run build"
     },
     "keywords": [
         "express",
