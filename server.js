@@ -10,7 +10,6 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 
-const logger = require('./src/util/logger');
 const db = require('./src/models/database');
 
 // Load .env Enviroment Variables to process.env
@@ -33,7 +32,6 @@ app.use(express.json( { limit: '50mb' } ));
 app.use(express.urlencoded( { extended: true, limit: '10mb' } ));
 
 // Configure custom logger middleware
-app.use(logger.dev, logger.combined);
 
 app.use(cookieParser());
 app.use(cors());
