@@ -8,7 +8,8 @@
     },
     "scripts": {
         "setup": "npm install && npm update",
-        "start": "node server.js"
+        "start": "node server.js",
+        "build": "npm run build"
     },
     "keywords": [
         "express",
