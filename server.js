@@ -11,8 +11,8 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 
-const logger = require('./util/logger');
-const db = require('./models/database');
+const logger = require('./src/util/logger');
+const db = require('./src/models/database');
 
 // Load .env Enviroment Variables to process.env
 
@@ -48,7 +48,7 @@ app.use('*', (req, res, next) => {
 
 // Assign Routes
 
-app.use('/', require('./routes/router.js'));
+app.use('/', require('./src/routes/router.js'));
 
 
 // Handle errors

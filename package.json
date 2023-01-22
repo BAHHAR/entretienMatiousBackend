@@ -2,13 +2,13 @@
     "name": "backend",
     "version": "1.0.0",
     "description": "backend is the ultimate backend solution",
-    "main": "src/server.js",
+    "main": "server.js",
     "engines": {
         "node": "18.x"
     },
     "scripts": {
         "setup": "npm install && npm update",
-        "start": "node src/server.js"
+        "start": "node server.js"
     },
     "keywords": [
         "express",
