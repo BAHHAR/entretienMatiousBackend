@@ -1,6 +1,6 @@
 const CityParTypeCustomer = require('../controllers/CityParTypeCustomer.js');
 const GrossVolumeParProductController = require('../controllers/GrossVolumeParProduct.controller.js');
-const MiscellaneousController = require('../controllers/miscellaneous.controller.js');
+const MiscellaneousController = require('../controllers/Miscellaneous.controller.js');
 const MoyenRatingParSexeController = require('../controllers/MoyenRatingParSexe.js');
 const TotalAchatParTypeClientController = require('../controllers/TotalAchatParTypeClient.controller.js');
 const  UploadFile  = require('../controllers/UploadFile.controller.js');
