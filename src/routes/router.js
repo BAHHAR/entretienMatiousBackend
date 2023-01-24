@@ -1,4 +1,4 @@
-const CityParTypeProduit = require('../controllers/CityParTypeCustomer.js');
+const CityParTypeProduit = require('../controllers/CityParTypeProduit.js');
 const GrossVolumeParProductController = require('../controllers/GrossVolumeParProduct.controller.js');
 const MiscellaneousController = require('../controllers/Miscellaneous.controller.js');
 const MoyenRatingParSexeController = require('../controllers/MoyenRatingParSexe.js');
