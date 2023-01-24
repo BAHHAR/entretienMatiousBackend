@@ -20,13 +20,9 @@ SECRET=AAA
 ````
 ## Insèrer les données d'un fichier csv à travers une commande
 
-1. Go to the src then util using this command 
+2. Tapez cette commande en remplaçant ce chemin avec votre chemin d'un fichier csv (le nom du fichier ne doit pas contenir des espaces) 
 
-> cd ./src/util
-
-2. apres donner le chemin d'un fichier csv (le nom ddu fichier ne doit pas contenir des espaces)
-
-> node ./CsvToMongo.js C:\Users\BAHHAR\Documents\data.csv
+> node ./src/util/CsvToMongo.js C:\Users\BAHHAR\Documents\data.csv
 
 
 ## Run
@@ -56,3 +52,7 @@ SECRET=AAA
 4. Nombre des achats par ville et catégorie ( Product Line )
 
 > /CityParTypeProduit
+
+4. Miscellaneous pour afficher le nombre total des clients, pourcentage des femmes, pourcentage des hommes et la moyenne de rating
+
+> /Miscellaneous
