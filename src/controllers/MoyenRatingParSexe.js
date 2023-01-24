@@ -3,6 +3,7 @@ const ModelSales = require('../models/model');
 
 
 const MoyenRatingParSexeController=catchAsync(async(req,res)=>{
+    // Utilisation de la méthode aggregate de mongoose pour calculer la Moyenne de rating par sexe
     const data=await ModelSales.aggregate([
         {
             $addFields:{
@@ -12,11 +13,11 @@ const MoyenRatingParSexeController=catchAsync(async(req,res)=>{
             },
         },
         {
-           
+           //regrouper les donnees par sexe
             $group:{
                 _id:'$Gender',
                 moyenne:{
-                    $avg:'$convertedRating'
+                    $avg:'$convertedRating' // calculer la moyenne avec l'expression $avg
                 }
             }
         }

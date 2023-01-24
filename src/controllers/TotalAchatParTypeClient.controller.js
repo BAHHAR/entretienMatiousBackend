@@ -3,6 +3,7 @@ const ModelSales = require('../models/model');
 
 
 const TotalAchatParTypeClientController=catchAsync(async(req,res)=>{
+    // Utilisation de la méthode aggregate de mongoose pour afficher le nombre  total des achats par type de client et sexe
     const data=await ModelSales.aggregate([
         {
             $group:{

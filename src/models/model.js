@@ -1,5 +1,6 @@
 const db = require("./database");
 
+// Création d'un schéma pour le modèle ModelSales
 const schema=new db.Schema({
     "Invoice ID":String,
     "Branch":String,
@@ -20,7 +21,7 @@ const schema=new db.Schema({
     "Rating":String,
 
 });
-
+// Création du modèle ModelSales en utilisant le schéma
 const ModelSales=db.model('ModelSales',schema);
 
 module.exports=ModelSales;

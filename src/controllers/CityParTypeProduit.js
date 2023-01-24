@@ -2,7 +2,8 @@ const catchAsync=require('../util/catchAsync')
 const ModelSales = require('../models/model');
 
 
-const CityParTypeCustomer=catchAsync(async(req,res)=>{
+const CityParTypeProduit=catchAsync(async(req,res)=>{
+    // Utilisation de la méthode aggregate de mongoose pour grouper les données par ville et type de produit
     const data=await ModelSales.aggregate([
         {
             $group:{
@@ -22,4 +23,4 @@ const CityParTypeCustomer=catchAsync(async(req,res)=>{
     res.json(results)
 })
 
-module.exports=CityParTypeCustomer
+module.exports=CityParTypeProduit

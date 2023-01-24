@@ -1,16 +1,10 @@
-const CityParTypeCustomer = require('../controllers/CityParTypeCustomer.js');
+const CityParTypeProduit = require('../controllers/CityParTypeCustomer.js');
 const GrossVolumeParProductController = require('../controllers/GrossVolumeParProduct.controller.js');
 const MiscellaneousController = require('../controllers/Miscellaneous.controller.js');
 const MoyenRatingParSexeController = require('../controllers/MoyenRatingParSexe.js');
 const TotalAchatParTypeClientController = require('../controllers/TotalAchatParTypeClient.controller.js');
-const  UploadFile  = require('../controllers/UploadFile.controller.js');
-const upload = require('../util/config.js');
 const router = require('express').Router();
 
-router
-    .route("/UploadFile")
-    .post(upload.single("file"),
-        UploadFile)
 
 router
     .route("/ProductsLine")
@@ -29,8 +23,8 @@ router
     .get(MiscellaneousController)
 
 router
-    .route("/CityParTypeCustomer")
-    .get(CityParTypeCustomer)
+    .route("/CityParTypeProduit")
+    .get(CityParTypeProduit)
 
 // You can require and use your routes here ;)
 
